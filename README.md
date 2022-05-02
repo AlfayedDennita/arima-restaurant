@@ -1,9 +1,9 @@
 # arima-restaurant
 
-Restaurant catalogue, the last submission to fulfill [Dicoding: Menjadi Front-End Web Developer Expert](https://www.dicoding.com/certificates/EYX4R292WXDL)
+Restaurant catalogue, the last submission to fulfill [Dicoding: Menjadi Front-End Web Developer Expert](https://www.dicoding.com/certificates/EYX4R292WXDL).
 
 ---
 
-Last updated: October, 17 2020
+Last updated: October 17, 2020
 
 Live preview: https://arima-restaurant-catalogue.web.app/
