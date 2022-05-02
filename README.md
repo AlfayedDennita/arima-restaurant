@@ -6,4 +6,4 @@ Restaurant catalogue, the last submission to fulfill [Dicoding: Menjadi Front-En
 
 Last updated: October 17, 2020
 
-Live preview: https://arima-restaurant-catalogue.web.app/
+Live site: https://arima-restaurant-catalogue.web.app/
