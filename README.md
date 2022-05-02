@@ -1,6 +1,6 @@
 # arima-restaurant
 
-Restaurant catalogue, the last submission to fulfill "Dicoding: Menjadi Front-End Web Developer Expert"
+Restaurant catalogue, the last submission to fulfill [Dicoding: Menjadi Front-End Web Developer Expert](https://www.dicoding.com/certificates/EYX4R292WXDL)
 
 ---
 
