@@ -1,0 +1,229 @@
+/*
+
+    |-----|
+----|FONTS|---------------------------------------|
+    |-----|                                       |
+                                                  |
+"Roboto", Helvetica, Arial, sans-serif -> body    |
+"Mukta", Helvetica, Arial, sans-serif -> brand    |
+"Ubuntu", Helvetica, Arial, sans-serif -> heading |
+                                                  |
+--------------------------------------------------|
+
+    |-----------------|
+----|WIDTH BREAKPOINTS|------|
+    |-----------------|      |
+                             |
+EXTRA SMALL: 0px - 575px     |
+SMALL: 576px - 767px         |
+MEDIUM: 768px - 991px        |
+LARGE: 992px - 1119px        |
+EXTRA LARGE: >= 1200px       |
+                             |
+-----------------------------|
+
+*/
+
+/* ------------------------------------ */
+/* <<<<<<<<<< GENERAL STYLES >>>>>>>>>> */
+/* ------------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  /* Color Variables */
+  --background-primary: #fff;
+  --background-dark: #25282b;
+  --text-primary: #1c1c1c;
+  --text-secondary: #808080;
+  --text-color: var(--background-color);
+  --white: var(--background-primary);
+  --lightgray: #eee;
+  --gray: #ececec;
+  --darkgray: #ccc;
+  overflow-x: hidden;
+  background-color: var(--background-primary);
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: var(--text-primary);
+}
+
+body[data-theme="orange"] {
+  --background-color: #fd9644;
+  --light: #f1a464;
+  --dark: #d46e1b;
+}
+
+body[data-theme="green"] {
+  --background-color: #26de81;
+  --light: #59eea3;
+  --dark: #16ad62;
+}
+
+body[data-theme="red"] {
+  --background-color: #fc5c65;
+  --light: #f0787e;
+  --dark: #d4212a;
+}
+
+body[data-theme="blue"] {
+  --background-color: #45aaf2;
+  --light: #7ec1f1;
+  --dark: #247fc0;
+}
+
+body[data-theme="night"] {
+  --background-primary: #1f1b24;
+  --background-dark: #1b181f;
+  --text-primary: #e4e6eb;
+  --text-secondary: #d1d3d8;
+  --white: var(--text-primary);
+  --lightgray: #332b38;
+  --gray: #2b2530;
+  --darkgray: #221d25;  
+  --background-color: #121212;
+  --text-color: #fd9644;
+  --light: #f1a464;
+  --dark: #000;
+}
+
+::selection {
+  background-color: var(--text-color);
+  color: var(--white);
+  opacity: 0.7;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--light);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color);
+}
+
+a, button, input, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a.button {
+  display: flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;  
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+body:not(.accessibility) a,
+body:not(.accessibility) button,
+body:not(.accessibility) button:focus {
+  outline: none;
+}
+
+body.accessibility a:focus,
+body.accessibility button:focus,
+body.accessibility input:focus,
+body.accessibility textarea:focus {
+  outline: 2px solid var(--text-color);
+}
+
+h2, h3 {
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+brand-logo svg {
+  margin-right: 0.5rem;
+  color: var(--text-color);
+}
+
+brand-logo span {
+  display: inline-block;
+  font-weight: bold;
+  font-family: "Mukta", Helvetica, Arial, sans-serif;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  min-width: 44px;
+  min-height: 44px;
+  color: var(--text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.skeleton {
+  position: relative;
+  background-color: var(--gray);
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--gray), var(--white), var(--gray));
+  opacity: 0.3;
+  animation-name: skeleton-loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+body[data-theme="night"] .skeleton::after {
+  background-image: linear-gradient(to right, var(--gray), var(--darkgray), var(--gray));
+}
+
+@keyframes skeleton-loading {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}

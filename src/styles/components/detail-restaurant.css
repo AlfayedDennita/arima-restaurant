@@ -1,0 +1,689 @@
+/* -------------------------------------- */
+/* <<<<<<<<<< DETAIL CONTAINER >>>>>>>>>> */
+/* -------------------------------------- */
+
+detail-container {
+  display: grid;
+  grid-template: auto / 100%;
+  gap: 2.5rem;
+}
+
+detail-container .skeleton {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+detail-container h3 {
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+detail-container h3 svg {
+  margin-right: 7px;
+  color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  detail-container {
+    grid-template: repeat(5, auto) / repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container {
+    grid-template: repeat(4, auto) / repeat(2, 1fr);
+  }
+  detail-container .skeleton {
+    margin: 0;
+  }
+  detail-container h3 {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  detail-container h3 svg {
+    margin-right: 10px;
+  }
+}
+
+/* ---------------------------------- */
+/* <<<<<<<<<< DETAIL IMAGE >>>>>>>>>> */
+/* ---------------------------------- */
+
+detail-container .skeleton:first-child {
+  width: 100%;
+  height: 15rem;
+  border-radius: 0;
+}
+
+detail-container detail-image {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+  min-height: 3rem;
+}
+
+detail-container detail-image img {
+  width: 100%;
+  min-height: 3rem;
+  max-height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+detail-container detail-image .add-to-favorites {
+  position: absolute;
+  bottom: -1.2rem;
+  right: 1.5rem;
+}
+
+detail-container detail-image .add-to-favorites button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--text-color);
+  color: var(--white);
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+detail-container detail-image .add-to-favorites button:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 576px) {
+  detail-container .skeleton:first-child {
+    height: 20rem;
+  }
+  detail-container detail-image .add-to-favorites {
+    right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  detail-container detail-image,
+  detail-container .skeleton:first-child {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  detail-container detail-image .add-to-favorites {
+    right: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container detail-image,
+  detail-container .skeleton:first-child {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0;
+  }
+  detail-container detail-image .add-to-favorites {
+    top: 1.5rem;
+    bottom: auto;
+    right: 1.5rem;
+  }
+  detail-container detail-image .add-to-favorites button {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* --------------------------------- */
+/* <<<<<<<<<< DETAIL INFO >>>>>>>>>> */
+/* --------------------------------- */
+
+detail-container .skeleton:nth-child(2) {
+  width: 90%;
+  height: 40rem;
+}
+
+detail-container detail-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+detail-container detail-info .detail-data {
+  display: flex;
+  align-items: center;  
+  column-gap: 10px;
+  font-size: 0.85rem;
+}
+
+detail-container detail-info .detail-rating svg {
+  margin-right: 5px;
+  color: var(--text-color);
+}
+
+detail-container detail-info .detail-city svg {
+  margin-right: 5px;
+}
+
+detail-container detail-info h2 {
+  padding: 0.25rem 0;
+}
+
+detail-container detail-info .detail-categories {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 0.85rem;
+}
+
+detail-container detail-info .detail-categories ul li {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 3px 7px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: var(--lightgray);
+}
+
+detail-container detail-info .detail-address,
+detail-container detail-info .detail-description {
+  font-size: 0.85rem;
+  line-height: 1.75;
+}
+
+detail-container detail-info .detail-address {
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+@media (min-width: 576px) {
+  detail-container .skeleton:nth-child(2) {
+    width: 80%;
+  }
+  detail-container detail-info {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  detail-container .skeleton:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 3;
+    height: 30rem;
+  }
+  detail-container detail-info {
+    grid-area: 2 / 1 / 3 / 3;
+    padding: 0 3.5rem;
+  }
+  detail-container detail-info .detail-data,
+  detail-container detail-info .detail-categories,  
+  detail-container detail-info .detail-address,
+  detail-container detail-info .detail-description {
+    font-size: 0.9rem;
+  }
+  detail-container detail-info h2 {
+    font-size: 1.6rem;
+  }
+  detail-container detail-info .detail-rating svg,
+  detail-container detail-info .detail-city svg {
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container .skeleton:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+  }
+  detail-container detail-info {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 0;
+  }
+  detail-container detail-info .detail-data,
+  detail-container detail-info .detail-categories,  
+  detail-container detail-info .detail-address,
+  detail-container detail-info .detail-description {
+    font-size: 1rem;
+  }
+  detail-container detail-info h2 {
+    font-size: 1.8rem;
+  }
+  detail-container detail-info .detail-categories li {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}
+
+/* --------------------------------- */
+/* <<<<<<<<<< DETAIL MENU >>>>>>>>>> */
+/* --------------------------------- */
+
+detail-container .skeleton:nth-child(3) {
+  width: 90%;
+  height: 60rem;
+}
+
+detail-container detail-menu {
+  display: grid;
+  grid-template: repeat(2, auto) / 100%;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  line-height: 1.75;
+}
+
+detail-container detail-menu ul {
+  margin-top: 0.5rem;
+}
+
+detail-container detail-menu li {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+}
+
+detail-container detail-menu li:nth-child(odd) {
+  background-color: var(--lightgray);
+}
+
+@media (min-width: 576px) {
+  detail-container .skeleton:nth-child(3) {
+    width: 80%;
+  }
+  detail-container detail-menu {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  detail-container .skeleton:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 3;
+    height: 40rem;
+  }
+  detail-container detail-menu {
+    grid-template: auto / repeat(2, 1fr);
+    gap: 2.5rem;
+    grid-area: 3 / 1 / 4 / 3;
+    padding: 0 3.5rem;
+  }
+  detail-container detail-menu li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container .skeleton:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 3;
+    width: 100%;
+    height: 35rem;
+  }
+  detail-container detail-menu {
+    grid-area: 2 / 1 / 3 / 3;
+    padding: 0;
+  }
+  detail-container detail-menu ul {
+    margin-top: 1rem;
+  }
+  detail-container detail-menu li {
+    font-size: 1rem;
+  }
+}
+
+/* ------------------------------------ */
+/* <<<<<<<<<< DETAIL REVIEWS >>>>>>>>>> */
+/* ------------------------------------ */
+
+detail-container .skeleton:nth-child(4) {
+  width: 90%;
+  height: 30rem;
+}
+
+detail-container detail-reviews {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  line-height: 1.75;
+  font-size: 0.85rem;
+  overflow: hidden;
+}
+
+detail-container detail-reviews .empty {
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+detail-container detail-reviews .review-item {
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+detail-container detail-reviews .review-item:last-child {
+  margin: 0;
+}
+
+detail-container detail-reviews .review-item .header-review {
+  display: flex;
+  column-gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--lightgray);
+}
+
+detail-container detail-reviews .review-item .header-review .name {
+  max-width: 60%;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+detail-container detail-reviews .review-item .content-review {
+  padding: 0.75rem 1rem;
+  word-wrap: break-word;
+}
+
+detail-container detail-reviews .show-all {
+  background-color: var(--lightgray);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  opacity: 0.8;
+  border-radius: 20px;
+  transition: opacity 0.2s;
+}
+
+detail-container detail-reviews .show-all:hover {
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  detail-container .skeleton:nth-child(4) {
+    width: 80%;
+  }
+  detail-container detail-reviews {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  detail-container .skeleton:nth-child(4) {
+    grid-area: 4 / 1 / 5 / 2;
+    width: 79.4%;
+    height: 25rem;
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  detail-container detail-reviews {
+    grid-area: 4 / 1 / 5 / 2;
+    padding: 0 0 0 3.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container .skeleton:nth-child(4) {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 100%;
+  }
+  detail-container detail-reviews {
+    grid-area: 3 / 1 / 4 / 2;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+/* ------------------------------------ */
+/* <<<<<<<<<< ADD NEW REVIEW >>>>>>>>>> */
+/* ------------------------------------ */
+
+detail-container .skeleton:nth-child(5) {
+  width: 90%;
+  height: 20rem;
+}
+
+detail-container .add-review {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  line-height: 1.75;
+}
+
+detail-container .add-review .name-review,
+detail-container .add-review .content-review {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+detail-container .add-review label {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  padding: 2px 5px;
+  background-color: var(--lightgray);
+  color: var(--text-secondary);
+  opacity: 0;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  transition: opacity 0.2s, top 0.2s;
+}
+
+detail-container .add-review label svg {
+  color: var(--text-color);
+}
+
+detail-container .add-review input,
+detail-container .add-review textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  background-color: var(--background-primary);
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+}
+
+detail-container .add-review input::placeholder,
+detail-container .add-review textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+detail-container .add-review input:focus + label,
+detail-container .add-review textarea:focus + label {
+  top: -14px;
+  opacity: 1;
+}
+
+detail-container .add-review textarea {
+  min-height: 5rem;
+  resize: none;
+}
+
+detail-container .add-review button {
+  padding: 1rem;
+  background-color: var(--text-color);
+  font-size: 0.85rem;
+  color: var(--white);
+  border-radius: 10px;
+  transition: transform 0.1s;
+}
+
+detail-container .add-review button:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 576px) {
+  detail-container .skeleton:nth-child(5) {
+    width: 80%;
+  }
+  detail-container .add-review {
+    padding: 0 2rem;
+  }
+  detail-container .add-review label {
+    right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  detail-container .skeleton:nth-child(5) {
+    grid-area: 4 / 2 / 5 / 3;
+    width: 79.4%;
+    margin: 0;
+  }
+  detail-container .add-review {
+    grid-area: 4 / 2 / 5 / 3;
+    padding: 0 3.5rem 0 0;
+  }
+  detail-container .add-review label {
+    right: 10px;
+  }
+  detail-container .add-review input,
+  detail-container .add-review textarea, 
+  detail-container .add-review button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container .skeleton:nth-child(5) {
+    grid-area: 3 / 2 / 4 / 3;
+    width: 100%;
+  }
+  detail-container .add-review {
+    grid-area: 3 / 2 / 4 / 3;
+    padding: 0;
+  }
+  detail-container .add-review label {
+    right: 20px;
+  }
+  detail-container .add-review input,
+  detail-container .add-review textarea, 
+  detail-container .add-review button {
+    font-size: 1rem;
+  }
+}
+
+/* ----------------------------------------- */
+/* <<<<<<<<<< NEAREST RESTAURANTS >>>>>>>>>> */
+/* ----------------------------------------- */
+
+detail-container .skeleton:last-child {
+  width: 90%;
+  height: 15rem;
+}
+
+detail-container nearest-restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  line-height: 1.75;
+}
+
+detail-container nearest-restaurants .restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+detail-container nearest-restaurants .restaurant-item {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+detail-container nearest-restaurants .restaurant-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 7rem;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.8;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+detail-container nearest-restaurants .restaurant-item:hover img {
+  opacity: 1;
+  transform: scale(1.15) rotate(5deg);
+}
+
+detail-container nearest-restaurants .restaurant-item .rating {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  padding: 2px 5px;
+  background-color: var(--text-color);
+  font-size: 0.8rem;
+  color: var(--white);
+  border-radius: 3px;
+}
+
+detail-container nearest-restaurants .restaurant-item .rating svg {
+  margin-right: 5px;
+}
+
+detail-container nearest-restaurants .restaurant-item .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.85rem;
+  padding: 3px 5px;
+  width: 100%;
+  background-color: var(--text-color);
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 576px) {
+  detail-container .skeleton:last-child {
+    width: 80%;
+  }
+  detail-container nearest-restaurants {
+    padding: 0 2rem;
+  }
+  detail-container nearest-restaurants .restaurant-item .rating {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  detail-container .skeleton:last-child {
+    grid-area: 5 / 1 / 6 / 3;
+    height: 10rem;
+  }
+  detail-container nearest-restaurants {
+    grid-area: 5 / 1 / 6 / 3;
+    padding: 0 3.5rem;
+  }
+  detail-container nearest-restaurants .restaurant-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  detail-container nearest-restaurants .restaurant-item .rating {
+    font-size: 0.85rem;
+  }
+  detail-container nearest-restaurants .restaurant-item .name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  detail-container .skeleton:last-child {
+    grid-area: 4 / 1 / 5 / 3;
+    width: 100%;
+  }
+  detail-container nearest-restaurants {
+    grid-area: 4 / 1 / 5 / 3;
+    padding: 0;
+  }
+  detail-container nearest-restaurants .restaurant-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  detail-container nearest-restaurants .restaurant-item .rating {
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+  }
+  detail-container nearest-restaurants .restaurant-item .name {
+    font-size: 1rem;
+  }
+}

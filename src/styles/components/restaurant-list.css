@@ -1,0 +1,255 @@
+/* ------------------------------------------- */
+/* <<<<<<<<<< RESTAURANTS CONTAINER >>>>>>>>>> */
+/* ------------------------------------------- */
+
+restaurants-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+restaurants-container h2 {
+  padding: 0 1rem;
+}
+
+body.favorites restaurants-container h2 {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 576px) {
+  restaurants-container h2 {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  restaurants-container h2 {
+    padding: 0 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  restaurants-container h2 {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.favorites restaurants-container h2 {
+    margin: 1rem 0;
+  }
+}
+
+/* -------------------------------------- */
+/*           LIST OF RESTAURANT           */
+/* -------------------------------------- */
+
+restaurants-container .notice {
+  margin-top: -0.5rem;
+  padding: 0 1rem;
+}
+
+restaurants-container .notice .keyword {
+  font-weight: bold;
+}
+
+restaurants-container .notice button {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--white);  
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+restaurants-container .notice button::before {  
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 120%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: var(--text-color);  
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+restaurants-container .notice button:hover::before {
+  opacity: 1;
+}
+
+restaurants-container restaurant-list {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+restaurants-container restaurant-list .show-all {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  background-color: var(--lightgray);
+  color: var(--text-secondary);
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+restaurants-container restaurant-list .show-all:hover {
+  opacity: 1;
+}
+
+restaurants-container restaurant-list .skeleton {
+  width: 100%;
+  height: 5.5rem;
+  border-radius: 10px;
+}
+
+restaurants-container .restaurant-item {
+  display: grid;
+  grid-template-columns: 7rem auto;
+}
+
+restaurants-container .restaurant-item .restaurant-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;  
+  height: 100%;
+}
+
+restaurants-container .restaurant-item .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;  
+}
+
+restaurants-container .restaurant-item .restaurant-image span {
+  position: absolute;
+  top: 0.5rem;
+  left: -5px;
+  padding: 5px;
+  background-color: var(--background-color);
+  font-size: 0.7rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+restaurants-container .restaurant-item .restaurant-image span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;  
+  border-top: 2.5px solid var(--dark);
+  border-right: 2.5px solid var(--dark);
+  border-bottom: 2.5px solid transparent;
+  border-left: 2.5px solid transparent;
+}
+
+restaurants-container .restaurant-item .restaurant-image span svg {
+  display: none;
+}
+
+restaurants-container .restaurant-item .restaurant-info {
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+restaurants-container .restaurant-item .restaurant-info .restaurant-rating {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+restaurants-container .restaurant-item .restaurant-info .restaurant-rating svg {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+restaurants-container .restaurant-item .restaurant-info .restaurant-rating svg:last-of-type {
+  margin-right: 5px;
+}
+
+restaurants-container .restaurant-item .restaurant-info h3 {
+  margin: 10px 0 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+restaurants-container .restaurant-item .restaurant-info p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 576px) {
+  restaurants-container .notice,
+  restaurants-container restaurant-list {
+    padding: 0 2rem;
+  }
+  restaurants-container restaurant-list .skeleton {
+    height: 7rem;
+  }
+  restaurants-container .restaurant-item {
+    grid-template-columns: 10rem auto;
+  }
+  restaurants-container .restaurant-item .restaurant-image span svg {
+    display: inline-block;
+  }
+  restaurants-container .restaurant-item .restaurant-info p {
+    -webkit-line-clamp: 2;
+  }  
+}
+
+@media (min-width: 768px) {
+  restaurants-container .notice {
+    padding: 0 3.5rem;
+  }
+  restaurants-container restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 3.5rem;
+  }
+  restaurants-container restaurant-list .skeleton {
+    height: 20rem;
+  }
+  restaurants-container .restaurant-item {
+    grid-template-rows: 12.5rem auto;
+    grid-template-columns: 100%;
+  }
+  restaurants-container .restaurant-item .restaurant-image span {
+    top: 1rem;
+  }
+  restaurants-container .restaurant-item .restaurant-info {
+    padding: 1rem 0 0 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  restaurants-container .notice {
+    padding: 0;
+  }
+  restaurants-container restaurant-list {
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  restaurants-container restaurant-list .skeleton {
+    height: 12.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  restaurants-container restaurant-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

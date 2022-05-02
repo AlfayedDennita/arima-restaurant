@@ -1,0 +1,120 @@
+/* ---------------------------- */
+/* <<<<<<<<<< FOOTER >>>>>>>>>> */
+/* ---------------------------- */
+
+footer {
+  display: grid;
+  grid-template: repeat(2, auto) / 100%;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+footer-top,
+footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+}
+
+footer-top brand-logo {
+  display: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+footer-top brand-logo:hover {
+  opacity: 1;
+}
+
+footer-top brand-logo a.button svg {
+  color: var(--text-secondary);
+  font-size: 1.8rem;
+}
+
+footer-top brand-logo span {
+  color: var(--text-secondary);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+footer-top ul {
+  display: flex;
+}
+
+footer-top ul a {
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+footer-top ul a:hover {
+  opacity: 0.8;
+}
+
+footer-bottom span:first-of-type {
+  display: none;
+}
+
+footer-bottom span:last-of-type svg {
+  color: var(--text-color);
+}
+
+@media (min-width: 576px) {
+  footer {
+    grid-template: auto / repeat(2, auto);
+    justify-content: space-between;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    grid-template: repeat(2, auto) / 100%;
+    gap: 2rem;
+    padding: 2rem 3.5rem;
+    margin-top: 5rem;
+    background-color: var(--background-dark);
+  }
+  footer-top,
+  footer-bottom {
+    justify-content: space-between;
+  }
+  footer-top {
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid var(--text-secondary);
+  }
+  footer-top brand-logo {
+    display: flex;
+  }
+  footer-top ul a {
+    color: var(--text-secondary);
+    opacity: 0.7;
+    font-size: 1.8rem;
+  }
+  footer-top ul a:hover {
+    opacity: 1;
+  }
+  footer-bottom > span:first-of-type {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    font-size: 1rem;
+    padding: 2rem 5rem;
+  }
+  footer-top {
+    border-bottom: 2px solid var(--text-secondary);
+  }
+  footer-top brand-logo a.button svg,
+  footer-top brand-logo span,
+  footer-top ul a {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,68 @@
+/* -------------------------- */
+/* <<<<<<<<<< MAIN >>>>>>>>>> */
+/* -------------------------- */
+
+main {
+  position: relative;
+  display: grid;
+  row-gap: 3rem;
+  min-height: 100vh;
+}
+
+body.home main {
+  grid-template: 100vh auto / 100%;
+}
+
+body:not(.home) main {
+  grid-template: auto / 100%;
+  padding-top: 12vh;
+}
+
+@media (min-width: 576px) {
+  main {
+    row-gap: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body:not(.home) main {
+    padding-top: 13vh;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    row-gap: 5rem;
+  }
+  body:not(.home) main {
+    padding-top: 15vh;
+  }
+}
+
+/* ----------------------------- */
+/* <<<<<<<<<< CONTENT >>>>>>>>>> */
+/* ----------------------------- */
+
+main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+main-content:focus {
+  outline: none;
+}
+
+body.favorites main-content {
+  padding-top: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  main-content {
+    padding: 0 5rem;
+  }
+  body.detail main-content {
+    padding-top: 3rem;
+  }
+}

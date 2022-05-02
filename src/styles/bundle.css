@@ -1,0 +1,10 @@
+@import "general.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "plugins.css";
+@import "components/jumbotron.css";
+@import "components/best-rating.css";
+@import "components/restaurant-list.css";
+@import "components/search-restaurant.css";
+@import "components/detail-restaurant.css";

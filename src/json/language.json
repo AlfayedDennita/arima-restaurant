@@ -1,0 +1,738 @@
+{
+  "specific": [
+    {
+      "item": "title",
+      "en": {
+        "content": "Arima - Find Your Restaurant in Here"
+      },
+      "id": {
+        "content": "Arima - Temukan Restoranmu di Sini"
+      }
+    },
+    {
+      "item": "skip-to-content",
+      "en": {
+        "content": "Skip to Content"
+      },
+      "id": {
+        "content": "Lompat ke Konten Utama"
+      }
+    },
+    {
+      "item": "main-content",
+      "en": {
+        "content": "Main Content"
+      },
+      "id": {
+        "content": "Konten Utama"
+      }
+    },
+    {
+      "item": "error-page",
+      "en": {
+        "content": "Error Page"
+      },
+      "id": {
+        "content": "Halaman Eror"
+      }
+    },
+    {
+      "item": "recommended-restaurants",
+      "en": {
+        "content": "Recommended Restaurants"
+      },
+      "id": {
+        "content": "Rekomendasi Restoran"
+      }
+    },
+    {
+      "item": "favorites-restaurant",
+      "en": {
+        "content": "Favorites Restaurant"
+      },
+      "id": {
+        "content": "Restoran Favorit"
+      }
+    },
+    {
+      "item": "search-name-placeholder",
+      "en": {
+        "content": "Search your restaurant in here"
+      },
+      "id": {
+        "content": "Cari restoranmu di sini"
+      }
+    },
+    {
+      "item": "name",
+      "en": {
+        "content": "name"
+      },
+      "id": {
+        "content": "nama"
+      }
+    },
+    {
+      "item": "city",
+      "en": {
+        "content": "city"
+      },
+      "id": {
+        "content": "kota"
+      }
+    },
+    {
+      "item": "something-wrong",
+      "en": {
+        "content": "Sorry, something went wrong."
+      },
+      "id": {
+        "content": "Maaf, sepertinya terjadi kesalahan."
+      }
+    },
+    {
+      "item": "no-favorites",
+      "en": {
+        "content": "No Favorites Restaurant"
+      },
+      "id": {
+        "content": "Tidak Ada Restoran Favorit"
+      }
+    },
+    {
+      "item": "no-favorites-message",
+      "en": {
+        "content": "Add favorites restaurant in detail page."
+      },
+      "id": {
+        "content": "Tambah restoran favorit di halaman detail."
+      }
+    },
+    {
+      "item": "page-not-found",
+      "en": {
+        "content": "Page Not Found"
+      },
+      "id": {
+        "content": "Halaman Tidak Ditemukan"
+      }
+    },
+    {
+      "item": "no-restaurant-list",
+      "en": {
+        "content": "No restaurant list."
+      },
+      "id": {
+        "content": "Tidak ada daftar restoran."
+      }
+    },
+    {
+      "item": "cannot-load-restaurants",
+      "en": {
+        "content": "Cannot Load Restaurants"
+      },
+      "id": {
+        "content": "Tidak Dapat Memuat Restoran"
+      }
+    },
+    {
+      "item": "cannot-load-detail",
+      "en": {
+        "content": "Cannot Load Restaurant Detail"
+      },
+      "id": {
+        "content": "Tidak Dapat Memuat Detail Restoran"
+      }
+    },
+    {
+      "item": "restaurant-added",
+      "en": {
+        "content": "Restaurant has been added to favorites."
+      },
+      "id": {
+        "content": "Restoran telah ditambahkan ke favorit."
+      }
+    },
+    {
+      "item": "restaurant-deleted",
+      "en": {
+        "content": "Restaurant has been deleted from favorites."
+      },
+      "id": {
+        "content": "Restoran telah dihapus dari favorit."
+      }
+    },
+    {
+      "item": "restaurant-has-added",
+      "en": {
+        "content": " has been added to favorites."
+      },
+      "id": {
+        "content": " telah ditambahkan ke favorit."
+      }
+    },
+    {
+      "item": "restaurant-has-deleted",
+      "en": {
+        "content": " has been deleted from favorites."
+      },
+      "id": {
+        "content": " telah dihapus dari favorit."
+      }
+    },
+    {
+      "item": "review-name-placeholder",
+      "en": {
+        "content": "Name"
+      },
+      "id": {
+        "content": "Nama"
+      }
+    },
+    {
+      "item": "review-content-placeholder",
+      "en": {
+        "content": "Review"
+      },
+      "id": {
+        "content": "Ulasan"
+      }
+    },
+    {
+      "item": "form-must-filled",
+      "en": {
+        "content": "Form must be filled!"
+      },
+      "id": {
+        "content": "Formulir harus diisi!"
+      }
+    },
+    {
+      "item": "add-review-success",
+      "en": {
+        "content": "Review has been added."
+      },
+      "id": {
+        "content": "Ulasan berhasil ditambahkan."
+      }
+    },
+    {
+      "item": "add-review-failed",
+      "en": {
+        "content": "Review has failed to added."
+      },
+      "id": {
+        "content": "Ulasan gagal ditambahkan."
+      }
+    }
+  ],
+  "general": [
+    {
+      "item": 1,
+      "en": {
+        "content": null,
+        "title": "Skip to Content",
+        "label": "Skip to Content"
+      },
+      "id": {
+        "content": null,
+        "title": "Lompat ke Konten Utama",
+        "label": "Lompat ke Konten Utama"
+      }
+    },
+    {
+      "item": 2,
+      "en": {
+        "content": "Home",
+        "title": "Home",
+        "label": null
+      },
+      "id": {
+        "content": "Beranda",
+        "title": "Beranda",
+        "label": null
+      }
+    },
+    {
+      "item": 3,
+      "en": {
+        "content": "About Us",
+        "title": "About Us",
+        "label": null
+      },
+      "id": {
+        "content": "Tentang Kami",
+        "title": "Tentang Kami",
+        "label": null
+      }
+    },
+    {
+      "item": 4,
+      "en": {
+        "content": "Favorites",
+        "title": "Favorites",
+        "label": null
+      },
+      "id": {
+        "content": "Favorit",
+        "title": "Favorit",
+        "label": null
+      }
+    },
+    {
+      "item": 5,
+      "en": {
+        "content": null,
+        "title": "Choose Color Themes",
+        "label": "Choose Color Themes"
+      },
+      "id": {
+        "content": null,
+        "title": "Pilih Tema Warna",
+        "label": "Pilih Tema Warna"
+      }
+    },
+    {
+      "item": 6,
+      "en": {
+        "content": "Color Themes",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Tema Warna",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 7,
+      "en": {
+        "content": "<i class='color-icon'></i>Orange",
+        "title": "Orange",
+        "label": "Orange"
+      },
+      "id": {
+        "content": "<i class='color-icon'></i>Oranye",
+        "title": "Oranye",
+        "label": "Oranye"
+      }
+    },
+    {
+      "item": 8,
+      "en": {
+        "content": "<i class='color-icon'></i>Green",
+        "title": "Green",
+        "label": "Green"
+      },
+      "id": {
+        "content": "<i class='color-icon'></i>Hijau",
+        "title": "Hijau",
+        "label": "Hijau"
+      }
+    },
+    {
+      "item": 9,
+      "en": {
+        "content": "<i class='color-icon'></i>Red",
+        "title": "Red",
+        "label": "Red"
+      },
+      "id": {
+        "content": "<i class='color-icon'></i>Merah",
+        "title": "Merah",
+        "label": "Merah"
+      }
+    },
+    {
+      "item": 10,
+      "en": {
+        "content": "<i class='color-icon'></i>Blue",
+        "title": "Blue",
+        "label": "Blue"
+      },
+      "id": {
+        "content": "<i class='color-icon'></i>Biru",
+        "title": "Biru",
+        "label": "Biru"
+      }
+    },
+    {
+      "item": 11,
+      "en": {
+        "content": "<i class='color-icon'></i>Night Mode",
+        "title": "Night Mode",
+        "label": "Night Mode"
+      },
+      "id": {
+        "content": "<i class='color-icon'></i>Mode Malam",
+        "title": "Mode Malam",
+        "label": "Mode Malam"
+      }
+    },
+    {
+      "item": 12,
+      "en": {
+        "content": null,
+        "title": "Choose Languages",
+        "label": "Choose Languages"
+      },
+      "id": {
+        "content": null,
+        "title": "Pilih Bahasa",
+        "label": "Pilih Bahasa"
+      }
+    },
+    {
+      "item": 13,
+      "en": {
+        "content": "Copyright &copy; 2020",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Hak Cipta &copy; 2020",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 14,
+      "en": {
+        "content": "Copyright &copy; 2020 <b>Arima</b>",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Hak Cipta &copy; 2020 <b>Arima</b>",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 15,
+      "en": {
+        "content": "Made with <i class='fas fa-heart fa-fw'></i> by <b>Alfayed Dennita</b>",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Dibuat dengan <i class='fas fa-heart fa-fw'></i> oleh <b>Alfayed Dennita</b>",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 16,
+      "en": {
+        "content": "Find your best restaurant from here, only at Arima!",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Temukan restoranmu dari sini, hanya di Arima!",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 17,
+      "en": {
+        "content": "#FindTheBest",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "#TemukanYangTerbaik",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 18,
+      "en": {
+        "content": "Best Rating Restaurants",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Restoran Terbaik",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 19,
+      "en": {
+        "content": "<i class='fas fa-exclamation-circle'></i>Search Restaurant by Name",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-exclamation-circle'></i>Cari Restoran Berdasarkan Nama",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 20,
+      "en": {
+        "content": null,
+        "title": "Search Restaurant by City",
+        "label": "Search Restaurant by City"
+      },
+      "id": {
+        "content": null,
+        "title": "Cari Restoran Berdasarkan Kota",
+        "label": "Cari Restoran Berdasarkan Kota"
+      }
+    },
+    {
+      "item": 21,
+      "en": {
+        "content": "Search by City",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Cari kota",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 22,
+      "en": {
+        "content": "Show All",
+        "title": "Show All Restaurant",
+        "label": "Show All Restaurant"
+      },
+      "id": {
+        "content": "Lihat Semua",
+        "title": "Lihat Semua Restoran",
+        "label": "Lihat Semua Restoran"
+      }
+    },
+    {
+      "item": 23,
+      "en": {
+        "content": "Result search by",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Hasil pencarian berdasarkan",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 24,
+      "en": {
+        "content": null,
+        "title": "Reset Search Settings",
+        "label": null
+      },
+      "id": {
+        "content": null,
+        "title": "Reset Pengaturan Pencarian",
+        "label": null
+      }
+    },
+    {
+      "item": 25,
+      "en": {
+        "content": "is <strong>not found</strong>",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<strong>tidak ditemukan</strong>",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 26,
+      "en": {
+        "content": null,
+        "title": "Add to Favorites",
+        "label": "Add to Favorites"
+      },
+      "id": {
+        "content": null,
+        "title": "Tambahkan ke Favorit",
+        "label": "Tambahkan ke Favorit"
+      }
+    },
+    {
+      "item": 27,
+      "en": {
+        "content": null,
+        "title": "Delete from Favorites",
+        "label": "Delete from Favorites"
+      },
+      "id": {
+        "content": null,
+        "title": "Hapus dari Favorit",
+        "label": "Hapus dari Favorit"
+      }
+    },
+    {
+      "item": 28,
+      "en": {
+        "content": "<i class='fas fa-hamburger'></i>Foods Menu",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-hamburger'></i>Menu Makanan",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 29,
+      "en": {
+        "content": "<i class='fas fa-glass-cheers'></i>Drinks Menu",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-glass-cheers'></i>Menu Minuman",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 30,
+      "en": {
+        "content": "Show All",
+        "title": "Show All Reviews",
+        "label": "Show All Reviews"
+      },
+      "id": {
+        "content": "Lihat Semua",
+        "title": "Lihat Semua Ulasan",
+        "label": "Lihat Semua Ulasan"
+      }
+    },
+    {
+      "item": 31,
+      "en": {
+        "content": "<i class='fas fa-comments'></i>Consumer Reviews",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-comments'></i>Ulasan Konsumen",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 32,
+      "en": {
+        "content": "<i class='fas fa-comment-dots'></i>Add New Review",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-comment-dots'></i>Beri Ulasan",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 33,
+      "en": {
+        "content": "<i class='fas fa-exclamation-circle'></i>Type Your Name",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-exclamation-circle'></i>Masukkan Nama",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 34,
+      "en": {
+        "content": null,
+        "title": null,
+        "label": "Review"
+      },
+      "id": {
+        "content": null,
+        "title": null,
+        "label": "Ulasan"
+      }
+    },
+    {
+      "item": 35,
+      "en": {
+        "content": "<i class='fas fa-exclamation-circle'></i>Type Your Review",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-exclamation-circle'></i>Masukkan Ulasan",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 36,
+      "en": {
+        "content": "Add Review",
+        "title": "Add Review",
+        "label": null
+      },
+      "id": {
+        "content": "Beri Ulasan",
+        "title": "Beri Ulasan",
+        "label": null
+      }
+    },
+    {
+      "item": 37,
+      "en": {
+        "content": "<i class='fas fa-store'></i>Nearest Restaurants",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "<i class='fas fa-store'></i>Restoran Terdekat",
+        "title": null,
+        "label": null
+      }
+    },
+    {
+      "item": 38,
+      "en": {
+        "content": "Back to Home",
+        "title": "Back to Home",
+        "label": null
+      },
+      "id": {
+        "content": "Kembali ke Beranda",
+        "title": "Kembali ke Beranda",
+        "label": null
+      }
+    },
+    {
+      "item": 39,
+      "en": {
+        "content": "There are no reviews yet",
+        "title": null,
+        "label": null
+      },
+      "id": {
+        "content": "Belum ada ulasan",
+        "title": null,
+        "label": null
+      }
+    }
+  ]
+}
